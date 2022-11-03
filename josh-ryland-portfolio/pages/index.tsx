@@ -34,7 +34,7 @@ const SectionContainer = styled.section`
   overflow-y: hidden;
   padding: 100px 20vw;
   &.sectionOne{
-    background-color: #1c2128;
+    background-color: ${(props) => props.theme.background};
   }
   &.green{
     background-color: green;
