@@ -14,6 +14,8 @@ export default NavBarMenu;
 
 const Menu = styled.div`
   position: fixed;
+  display: flex;
+  justify-content: center;
   top: 64px;
   bottom: 0;
   opacity: 0;

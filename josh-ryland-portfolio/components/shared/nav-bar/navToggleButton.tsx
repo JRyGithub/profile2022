@@ -9,7 +9,7 @@ const NavToggleButton = () => {
     setIsNavbarExpanded(e => !e);
     myToggleButton.current.setAttribute('aria-expanded', isNavbarExpanded.toString());
   };
-  
+
   return (
     <Button
       ref={myToggleButton}
@@ -41,7 +41,7 @@ const Button = styled.button`
   flex-direction: column;
 
   &#navbar-toggle:is(:focus, :hover) .icon-bar {
-    background-color: red;
+    box-shadow: ${props => props.theme.neonBoxShadow}
   }
 
   &#navbar-toggle[aria-expanded='true'] .icon-bar:is(:first-child, :last-child) {
@@ -72,5 +72,5 @@ const IconBar = styled.span`
   width: 25px;
   height: 4px;
   margin: 2px;
-  background-color: blue;
+  background-color: rgba(255, 255, 255, 0.125);
 `

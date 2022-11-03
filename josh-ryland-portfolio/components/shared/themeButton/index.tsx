@@ -11,7 +11,7 @@ const ThemeButton = () => {
   const handleToggle = () => {
     switchTheme(theme === ThemeTypes.Light ? ThemeTypes.Dark : ThemeTypes.Light)
   }
-  
+
   return (
     <Toggle onClick={handleToggle}>
       <ThemeImage src={ theme === ThemeTypes.Light ? `${SUN}` : `${MOON}` }/>
@@ -40,5 +40,5 @@ const Toggle = styled.button`
 `
 
 const ThemeImage = styled.img`
-  max-width: 20px;
+  max-width: 1em;
 `

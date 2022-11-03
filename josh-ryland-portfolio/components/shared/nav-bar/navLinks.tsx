@@ -14,13 +14,18 @@ const NavLinks = () => {
 export default NavLinks;
 
 const NavbarLinks = styled.div`
+  height: 50vh;
+  width: 20vw;
   list-style: none;
   position: absolute;
-  left: 0;
-  right: 0;
-  background-color: red;
+  top: 12vh;
+  background-color: ${(props) => props.theme.backgroundTransparent};
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: ${(props) => props.theme.transparentBorder};
+  border-radius: 4px;
 `
