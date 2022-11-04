@@ -3,4 +3,5 @@ export interface theme {
   backgroundTransparent: string,
   transparentBorder: string,
   neonBoxShadow: string,
+  textColor: string,
 }

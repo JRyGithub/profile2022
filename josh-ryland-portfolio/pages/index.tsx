@@ -13,11 +13,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar/>
-      <SectionContainer className='sectionOne'>
+      <SectionContainer id="section_one" className='sectionOne'>
         <FirstSection/>
       </SectionContainer>
-      <SectionContainer className='blue'></SectionContainer>
-      <SectionContainer className='green'></SectionContainer>
+      <SectionContainer id="section_two" className='blue'></SectionContainer>
+      <SectionContainer id="section_three" className='green'></SectionContainer>
     </div>
   )
 }

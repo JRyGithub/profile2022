@@ -5,19 +5,19 @@ interface route {
 
 export const routes: Array<route> = [
   {
-    link: '/',
+    link: '#section_one',
     name: 'Home'
   },
   {
-    link: '/',
+    link: '#section_two',
     name: 'Projects'
   },
   {
-    link: '/',
+    link: '#section_three',
     name: 'Products'
   },
   {
-    link: '/',
+    link: '#section_four',
     name: 'Contact'
   }
 ];
