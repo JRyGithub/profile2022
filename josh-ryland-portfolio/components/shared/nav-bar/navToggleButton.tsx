@@ -51,6 +51,7 @@ const Button = styled.button`
   }
 
   &#navbar-toggle[aria-expanded='true'] .icon-bar:first-child {
+    transition: 1s;
     transform: rotate(45deg);
   }
 
@@ -59,6 +60,7 @@ const Button = styled.button`
   }
 
   &#navbar-toggle[aria-expanded='true'] .icon-bar:last-child {
+    transition: 1s;
     transform: rotate(-45deg);
   }
   &#navbar-toggle[aria-expanded='true'] + #navbar-menu {

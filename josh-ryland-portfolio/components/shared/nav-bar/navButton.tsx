@@ -12,7 +12,7 @@ export default NavButton;
 const ListItem = styled.li`
   font-size: 2rem;
   padding: 10px;
-  color: ${props => props.theme.textColor}
+  color: ${props => props.theme.secondaryColor}
 `
 
 const Anchor = styled.a`
