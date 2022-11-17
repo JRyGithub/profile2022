@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import styled from 'styled-components'
 import FirstSection from '../components/first-section'
+import SecondSection from '../components/second-section'
 import NavBar from '../components/shared/nav-bar'
+import ThirdSection from '../components/third-section'
 
 export default function Home() {
   return (
@@ -13,11 +15,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar/>
-      <SectionContainer id="section_one" className='sectionOne'>
+      <SectionContainer id="section_one" className='sectionOne backgroundOne'>
         <FirstSection/>
       </SectionContainer>
-      <SectionContainer id="section_two" className='blue'></SectionContainer>
-      <SectionContainer id="section_three" className='green'></SectionContainer>
+      <SectionContainer id="section_two" className='sectionTwo backgroundTwo'>
+        <SecondSection/>
+      </SectionContainer>
+      <SectionContainer id="section_three" className='sectionThree backgroundOne'>
+        <ThirdSection/>
+      </SectionContainer>
+      {/* <SectionContainer id="section_four" className='sectionFour backgroundTwo'></SectionContainer> */}
     </div>
   )
 }
@@ -32,14 +39,11 @@ const SectionContainer = styled.section`
   box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: hidden;
-  padding: 100px 20vw;
-  &.sectionOne{
+  padding: 100px 10vw;
+  &.backgroundOne{
     background-color: ${(props) => props.theme.background};
   }
-  &.green{
-    background-color: green;
-  }
-  &.red{
-    background-color: red;
+  &.backgroundTwo{
+    background-color: ${(props) => props.theme.backgroundTwo};
   }
 `

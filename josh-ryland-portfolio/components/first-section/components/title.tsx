@@ -34,5 +34,5 @@ const H1 = styled.div`
     font-size: 10vw;
   };
   color: ${(props) => props.theme.textColor};
-  text-shadow: .75px .75px 2.5px ${(props) => props.theme.textColor};,-0.5px .25px 5px ${(props) => props.theme.textColor};;  
+  text-shadow: .75px .75px 2.5px ${(props) => props.theme.textColor};,-0.5px .25px 5px ${(props) => props.theme.textColor};  
 `

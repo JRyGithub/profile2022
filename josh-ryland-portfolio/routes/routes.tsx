@@ -12,12 +12,12 @@ export const routes: Array<route> = [
     link: '#section_two',
     name: 'Projects'
   },
+  // {
+  //   link: '#section_three',
+  //   name: 'Products'
+  // },
   {
     link: '#section_three',
-    name: 'Products'
-  },
-  {
-    link: '#section_four',
     name: 'Contact'
   }
 ];
